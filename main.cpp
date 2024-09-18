@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    ImageViewer w(QString("E:\\2.png"));
+    ImageViewer w(QString(":/1.jpg"));
     w.show();
     return a.exec();
 }
