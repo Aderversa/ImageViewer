@@ -18,11 +18,14 @@ protected:
     void mouseReleaseEvent(QMouseEvent *event);
     void paintEvent(QPaintEvent *event);
     void wheelEvent(QWheelEvent* event);
+    void resizeEvent(QResizeEvent *event);
 
 private:
     QImage image;
     QRect m_viewport;
     QPoint lastPos;
+    qreal zoomFactor;
+    qreal minZoomFactor;
 };
 
 #endif // IMAGEVIEWER_H
